@@ -1,156 +1,172 @@
 {
-  "danish_text_clean": "Facebook-stifteren Mark Zuckerberg er i gang med at finde en afløser: En kunstigt intelligent klon af ham selv.\n\nKlonen vil efter planen optræde i et avanceret 3D-format og kan derefter holde møder med medarbejderne i Facebook-moderselskabet, Meta.\n\nUSA's teknologigiganter sprøjter milliarder ind i et ai-eventyr, som ingen kan overskue hverken omfanget eller konsekvensen af. Natten til torsdag kom der nye vilde tal, fortæller Michael Jarlner om i denne kommentar.",
-  "english_translation": "Facebook founder Mark Zuckerberg is in the process of finding a replacement: An artificially intelligent clone of himself.\n\nThe clone will, according to plan, appear in an advanced 3D format and can then hold meetings with employees at Facebook's parent company, Meta.\n\nThe US technology giants are pumping billions into an AI adventure that no one can fully grasp the scope or consequences of. On Thursday morning, new wild figures emerged, which Michael Jarlner discusses in this commentary.",
+  "danish_text_clean": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa. Han tjener 39 millioner kroner, er i en liga for sig blandt valgte ledere og får kritik for at være langt fra fodboldens rødder.\n\nNogle mennesker får løn for at redde liv. Andre får løn for at undervise børn, reparere kloakker, lave pålæg, tegne huse eller holde styr på verden, når den er ved at falde fra hinanden en tirsdag eftermiddag.\n\nGianni Infantino får løn for at lede verdens mest populære leg: fodbold. Et traditionsrigt spil, der kloden rundt får bestøvlede børn til at jage en slidt bold over støvede baner, får mennesker med store hjerter til at tilbringe halve liv i klubhuse og får voksne til at råbe af fjernsynet, som om verden – eller i det mindste stillingen – kan ændre sig, hvis bare de brøler højt nok.",
+  "english_translation": "Gianni Infantino has, over ten years, more than tripled his salary as president of FIFA. He earns 39 million kroner, is in a league of his own among elected leaders, and is being criticized for being far from football's roots.\n\nSome people are paid to save lives. Others are paid to teach children, repair sewers, make cold cuts, design houses, or keep the world together when it is about to fall apart on a Tuesday afternoon.\n\nGianni Infantino is paid to lead the world's most popular game: football. A game rich in tradition that, around the globe, gets boot-wearing children to chase a worn ball across dusty pitches, gets people with big hearts to spend half their lives in clubhouses, and gets adults to shout at the television as if the world – or at least the score – can change, if only they roar loudly enough.",
   "vocabulary": [
     {
-      "word": "påfund",
-      "lemma": "påfund",
+      "word": "løn",
+      "lemma": "løn",
       "pos": "noun",
-      "english": "scheme, brainchild, far-fetched idea",
-      "example_from_article": "Er Zuckerbergs nyeste påfund alligevel for vildt?",
-      "note": "Carries a slightly ironic or skeptical tone — implies the idea is eccentric or outlandish.",
-      "gender": "et",
-      "indefinite_singular": "et påfund",
-      "definite_singular": "påfundet",
-      "indefinite_plural": "påfund",
-      "definite_plural": "påfundene"
-    },
-    {
-      "word": "stifteren",
-      "lemma": "stifter",
-      "pos": "noun",
-      "english": "founder",
-      "example_from_article": "Facebook-stifteren Mark Zuckerberg er i gang med at finde en afløser.",
-      "note": "Definite form of 'stifter'. Commonly appears in compounds: 'stifter' alone or 'virksomhedsstifter' (company founder).",
+      "english": "salary, pay, wage",
+      "example_from_article": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa.",
+      "note": "Very common word. Do not confuse with 'løbe' (to run). 'Lønforhøjelse' = pay rise.",
       "gender": "en",
-      "indefinite_singular": "en stifter",
-      "definite_singular": "stifteren",
-      "indefinite_plural": "stiftere",
-      "definite_plural": "stifterne"
+      "indefinite_singular": "en løn",
+      "definite_singular": "lønnen",
+      "indefinite_plural": "lønninger",
+      "definite_plural": "lønningerne"
     },
     {
-      "word": "afløser",
-      "lemma": "afløser",
+      "word": "tredoblet",
+      "lemma": "tredoble",
+      "pos": "verb",
+      "english": "tripled, to triple",
+      "example_from_article": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa.",
+      "note": "Compound: 'tre' (three) + 'doble' (to double). Pattern: 'fordoble' (double), 'firedoble' (quadruple).",
+      "infinitive": "at tredoble",
+      "present_tense": "tredobler",
+      "past_tense": "tredoblede",
+      "past_participle": "tredoblet"
+    },
+    {
+      "word": "voldsomt",
+      "lemma": "voldsom",
+      "pos": "adj",
+      "english": "enormous, extreme, intense",
+      "example_from_article": "»Det er et voldsomt beløb«",
+      "note": "Literally 'violent', but very commonly used to mean 'extreme' or 'massive' in everyday speech. Mild false friend with English 'violent'. Forms: voldsom / voldsomt / voldsomme."
+    },
+    {
+      "word": "beløb",
+      "lemma": "beløb",
       "pos": "noun",
-      "english": "replacement, substitute, successor",
-      "example_from_article": "Mark Zuckerberg er i gang med at finde en afløser.",
-      "note": "From the verb 'at afløse' (to relieve, replace). Also used in sports for a substitute player.",
+      "english": "amount, sum (of money)",
+      "example_from_article": "»Det er et voldsomt beløb«",
+      "note": "Neuter noun with identical singular and plural forms: 'et beløb / beløb'.",
+      "gender": "et",
+      "indefinite_singular": "et beløb",
+      "definite_singular": "beløbet",
+      "indefinite_plural": "beløb",
+      "definite_plural": "beløbene"
+    },
+    {
+      "word": "rødder",
+      "lemma": "rod",
+      "pos": "noun",
+      "english": "roots",
+      "example_from_article": "...og får kritik for at være langt fra fodboldens rødder.",
+      "note": "Irregular umlaut plural: rod → rødder. Used both literally (tree roots) and figuratively (one's origins/roots).",
       "gender": "en",
-      "indefinite_singular": "en afløser",
-      "definite_singular": "afløseren",
-      "indefinite_plural": "afløsere",
-      "definite_plural": "afløserne"
+      "indefinite_singular": "en rod",
+      "definite_singular": "roden",
+      "indefinite_plural": "rødder",
+      "definite_plural": "rødderne"
     },
     {
-      "word": "kunstigt",
-      "lemma": "kunstig",
-      "pos": "adj",
-      "english": "artificial, synthetic",
-      "example_from_article": "En kunstigt intelligent klon af ham selv.",
-      "note": "Used here as an adverb modifying 'intelligent'. 'Kunstig intelligens' = artificial intelligence. The -t ending appears when 'kunstig' is used adverbially."
-    },
-    {
-      "word": "optræde",
-      "lemma": "optræde",
-      "pos": "verb",
-      "english": "to appear, to perform, to act",
-      "example_from_article": "Klonen vil efter planen optræde i et avanceret 3D-format.",
-      "note": "Can mean both 'to perform on stage' and 'to appear/show up'. Context determines which meaning applies.",
-      "infinitive": "at optræde",
-      "present_tense": "optræder",
-      "past_tense": "optrådte",
-      "past_participle": "optrådt"
-    },
-    {
-      "word": "avanceret",
-      "lemma": "avanceret",
-      "pos": "adj",
-      "english": "advanced, sophisticated",
-      "example_from_article": "Klonen vil efter planen optræde i et avanceret 3D-format.",
-      "note": "Borrowed from French via English. Widely used in Danish for technology, skills, and ideas."
-    },
-    {
-      "word": "moderselskabet",
-      "lemma": "moderselskab",
+      "word": "kloakker",
+      "lemma": "kloak",
       "pos": "noun",
-      "english": "parent company",
-      "example_from_article": "Holde møder med medarbejderne i Facebook-moderselskabet, Meta.",
-      "note": "Compound: 'moder' (mother) + 'selskab' (company). Danish uses 'moder-' in business compounds where English says 'parent'.",
-      "gender": "et",
-      "indefinite_singular": "et moderselskab",
-      "definite_singular": "moderselskabet",
-      "indefinite_plural": "moderselskaber",
-      "definite_plural": "moderselskaberne"
+      "english": "sewers, drains",
+      "example_from_article": "Andre får løn for at undervise børn, reparere kloakker, lave pålæg...",
+      "note": "",
+      "gender": "en",
+      "indefinite_singular": "en kloak",
+      "definite_singular": "kloakken",
+      "indefinite_plural": "kloakker",
+      "definite_plural": "kloakkerne"
     },
     {
-      "word": "sprøjter",
-      "lemma": "sprøjte",
+      "word": "traditionsrigt",
+      "lemma": "traditionsrig",
+      "pos": "adj",
+      "english": "rich in tradition, steeped in tradition",
+      "example_from_article": "Et traditionsrigt spil, der kloden rundt får bestøvlede børn...",
+      "note": "Compound with suffix '-rig' (rich in). Productive pattern: 'næringsrig' (nutritious), 'farverig' (colourful). Here in neuter form '-rigt' agreeing with 'spil' (et spil)."
+    },
+    {
+      "word": "bestøvlede",
+      "lemma": "bestøvlet",
+      "pos": "adj",
+      "english": "wearing boots, booted",
+      "example_from_article": "...der kloden rundt får bestøvlede børn til at jage en slidt bold...",
+      "note": "From 'støvle' (boot) with prefix 'be-'. The 'be-' prefix commonly forms adjectives meaning 'equipped with something': 'bevæbnet' (armed), 'bevidst' (conscious)."
+    },
+    {
+      "word": "slidt",
+      "lemma": "slidt",
+      "pos": "adj",
+      "english": "worn, worn-out, battered",
+      "example_from_article": "...får bestøvlede børn til at jage en slidt bold over støvede baner.",
+      "note": "Also the past participle of 'at slide' (to wear out, to toil hard). Context determines meaning. Definite/plural form: slidte."
+    },
+    {
+      "word": "tilbringe",
+      "lemma": "tilbringe",
       "pos": "verb",
-      "english": "to pump, to inject, to spray",
-      "example_from_article": "USA's teknologigiganter sprøjter milliarder ind i et ai-eventyr.",
-      "note": "Literally 'to spray/squirt'. Used figuratively here with 'ind i' (into) to mean pouring money into something — vivid journalistic language.",
-      "infinitive": "at sprøjte",
-      "present_tense": "sprøjter",
-      "past_tense": "sprøjtede",
-      "past_participle": "sprøjtet"
+      "english": "to spend (time)",
+      "example_from_article": "...får mennesker med store hjerter til at tilbringe halve liv i klubhuse.",
+      "note": "Used only for spending time, never money. For spending money use 'at bruge'. Irregular: tilbragte / tilbragt.",
+      "infinitive": "at tilbringe",
+      "present_tense": "tilbringer",
+      "past_tense": "tilbragte",
+      "past_participle": "tilbragt"
     },
     {
-      "word": "overskue",
-      "lemma": "overskue",
-      "pos": "verb",
-      "english": "to grasp fully, to comprehend, to get an overview of",
-      "example_from_article": "Som ingen kan overskue hverken omfanget eller konsekvensen af.",
-      "note": "False-friend risk: does NOT mean 'to overlook' (ignore). 'Jeg kan ikke overskue det' = I can't get my head around it / it's overwhelming.",
-      "infinitive": "at overskue",
-      "present_tense": "overskuer",
-      "past_tense": "overskuede",
-      "past_participle": "overskuet"
-    },
-    {
-      "word": "omfanget",
-      "lemma": "omfang",
+      "word": "stillingen",
+      "lemma": "stilling",
       "pos": "noun",
-      "english": "scope, extent, scale",
-      "example_from_article": "Som ingen kan overskue hverken omfanget eller konsekvensen af.",
-      "note": "Frequent in formal and journalistic Danish. 'I stort omfang' = to a large extent.",
-      "gender": "et",
-      "indefinite_singular": "et omfang",
-      "definite_singular": "omfanget",
-      "indefinite_plural": "omfang",
-      "definite_plural": "omfangene"
+      "english": "the score (in sport); position, job",
+      "example_from_article": "...som om verden – eller i det mindste stillingen – kan ændre sig...",
+      "note": "Multi-meaning word. Here 'stillingen' = the score in a football match. It also commonly means 'a job/position' (e.g. 'en god stilling').",
+      "gender": "en",
+      "indefinite_singular": "en stilling",
+      "definite_singular": "stillingen",
+      "indefinite_plural": "stillinger",
+      "definite_plural": "stillingerne"
+    },
+    {
+      "word": "brøler",
+      "lemma": "brøle",
+      "pos": "verb",
+      "english": "to roar, to bellow, to shout",
+      "example_from_article": "...som om verden kan ændre sig, hvis bare de brøler højt nok.",
+      "note": "Primarily used for animals (lions, cows), but here used figuratively for humans shouting loudly. Also: 'en brøler' (noun) = a blunder/howler.",
+      "infinitive": "at brøle",
+      "present_tense": "brøler",
+      "past_tense": "brølede",
+      "past_participle": "brølet"
     }
   ],
   "grammar_notes": [
     {
       "topic": "Modal verb 'kan' (can / to be able to)",
       "category": "modal verb",
-      "explanation": "'Kan derefter holde møder' and 'ingen kan overskue' both use 'kan', present tense of 'at kunne'. Like all Danish modals, it is followed by a bare infinitive — no 'at'. 'Kan' expresses ability or possibility and is one of the most frequent modal verbs in Danish."
+      "explanation": "'Kan' is the present tense of 'at kunne'. Like all Danish modal verbs, it is followed directly by an infinitive without 'at': 'verden kan ændre sig' (the world can change). Note that 'kan' never takes the normal present-tense '-r' ending — it is already the present form."
     },
     {
-      "topic": "Adverb 'derefter' (then / after that)",
-      "category": "adverb",
-      "explanation": "'Klonen kan derefter holde møder' — 'derefter' indicates temporal sequence: something happens first, then this follows. It belongs to a formal/written register. In spoken Danish, 'så' (so/then) or 'bagefter' (afterwards) are more common equivalents."
-    },
-    {
-      "topic": "Correlative conjunction 'hverken … eller' (neither … nor)",
+      "topic": "Purpose clause: 'for at' + infinitive",
       "category": "connector",
-      "explanation": "'Ingen kan overskue hverken omfanget eller konsekvensen af' uses 'hverken…eller' to negate two items in parallel, equivalent to English 'neither…nor'. The negation is already carried by 'ingen' (no one), so 'hverken…eller' adds emphatic parallel structure. Learn these correlative pairs together: 'både…og' (both…and), 'enten…eller' (either…or), 'hverken…eller' (neither…nor)."
+      "explanation": "'For at' introduces a purpose clause meaning 'in order to'. The article repeats the pattern: 'løn for at redde liv', 'for at undervise børn', 'for at lede verdens mest populære leg'. This is equivalent to English 'to' or 'in order to' and is one of the most common constructions in Danish."
     },
     {
-      "topic": "Progressive construction 'er i gang med at + infinitive'",
+      "topic": "Construction: 'er ved at' (to be about to / in the process of)",
       "category": "syntax",
-      "explanation": "'Zuckerberg er i gang med at finde en afløser' — Danish has no true present progressive (-ing form). The phrase 'er i gang med at' (literally: is in the process of) followed by an infinitive fills this gap and emphasises that the action is actively ongoing. It is more emphatic than the simple present 'finder'."
+      "explanation": "'Er ved at' + infinitive signals that something is on the verge of happening: 'når den er ved at falde fra hinanden' (when it is about to fall apart). Compare with 'er i gang med at' (is in the middle of doing). Both constructions are very common in spoken and written Danish."
+    },
+    {
+      "topic": "Adverb 'bare' (just, only, simply)",
+      "category": "adverb",
+      "explanation": "'Bare' here means 'just' or 'only', synonymous with 'kun': 'hvis bare de brøler højt nok' (if only they shout loudly enough). 'Bare' is also used in reassurances ('Bare rolig!' = 'Just relax!') and is extremely frequent in informal Danish — far more versatile than its English equivalent."
     }
   ],
   "difficulty": "B1",
   "discussion_questions": [
-    "Hvad synes du om ideen om at bruge en AI-klon til at holde møder på arbejde?",
-    "Hvilke problemer kan der opstå, hvis en AI-klon repræsenterer en rigtig person?",
-    "Er det godt eller dårligt, at store teknologivirksomheder investerer så mange penge i kunstig intelligens?"
+    "Hvad synes du om Gianni Infantinos løn – er den for høj?",
+    "Hvem i dit land tjener for meget, og hvem tjener for lidt?",
+    "Hvad betyder fodbold for dig – er det bare en leg eller noget mere?"
   ],
   "date": "2026-04-30",
   "source": "Politiken",
-  "title": "Er Zuckerbergs nyeste påfund alligevel for vildt?",
-  "url": "https://politiken.dk/internationalt/art10822316/Er-Zuckerbergs-nyeste-p%C3%A5fund-alligevel-for-vildt",
-  "pub_date": "Thu, 30 Apr 2026 09:57:03 +0200"
+  "title": "»Det er et voldsomt beløb«: Infantinos løn er eksploderet og er i en liga for sig",
+  "url": "https://politiken.dk/sport/fodbold/art10811902/%C2%BBDet-er-et-voldsomt-bel%C3%B8b%C2%AB-Infantinos-l%C3%B8n-er-eksploderet-og-er-i-en-liga-for-sig",
+  "pub_date": "Thu, 30 Apr 2026 07:49:56 +0200"
 }
