@@ -18,6 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from fetch_rss import fetch_all_feeds, fetch_url
 from dissect import dissect_article
+import telegram
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "docs" / "data"
@@ -111,6 +112,14 @@ def main() -> None:
     print(f"  vocab:  {len(lesson.get('vocabulary', []))} words")
     print(f"  grammar: {len(lesson.get('grammar_notes', []))} notes")
     print(f"  difficulty: {lesson.get('difficulty', '?')}")
+
+    # Optional: send Telegram notification (skips silently if .env not configured)
+    if telegram.is_configured() and "--no-notify" not in sys.argv:
+        try:
+            telegram.send_lesson_notification(lesson)
+            print("  Telegram notification sent.")
+        except Exception as e:
+            print(f"  [warn] Telegram notification failed: {e}")
 
 
 def update_manifest() -> None:
