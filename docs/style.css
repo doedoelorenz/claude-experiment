@@ -1,0 +1,189 @@
+/* Danish Daily — mobile-first */
+
+:root {
+  --bg: #fafaf7;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #c8102e;        /* Danish flag red */
+  --card: #ffffff;
+  --border: #e5e5e0;
+  --note-bg: #fff8e6;
+  --code: #f0efe9;
+  --max: 640px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14140f;
+    --fg: #e8e6df;
+    --muted: #9a9a90;
+    --accent: #ff5a5a;
+    --card: #1d1d18;
+    --border: #2a2a23;
+    --note-bg: #2a230f;
+    --code: #22221c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Header */
+.topbar {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: env(safe-area-inset-top) 0 0;
+  z-index: 10;
+}
+.topbar-row {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+}
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px;
+  padding-bottom: max(36px, env(safe-area-inset-bottom));
+}
+
+.loading, .error {
+  color: var(--muted);
+  text-align: center;
+  padding: 48px 16px;
+}
+.error code {
+  background: var(--code);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Lesson */
+.lesson { display: block; }
+
+.title {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 12px 0 8px;
+}
+
+.byline {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+.byline a { color: var(--accent); text-decoration: none; }
+.byline a:hover { text-decoration: underline; }
+
+.block {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+.block h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.block .lang {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.english-summary { margin: 0; }
+
+.danish-text p {
+  margin: 0 0 14px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+.danish-text p:last-child { margin-bottom: 0; }
+
+/* Vocabulary */
+.vocab-list, .grammar-list, .discussion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.vocab-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.vocab-item:last-child { border-bottom: none; }
+
+.vocab-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.word { font-weight: 600; font-size: 1.08rem; }
+.lemma { color: var(--muted); font-style: italic; font-size: 0.9em; }
+.pos {
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+.english { margin: 4px 0 6px; }
+.example {
+  font-style: italic;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  margin: 6px 0;
+}
+.note {
+  background: var(--note-bg);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.92rem;
+  margin-top: 6px;
+}
+
+/* Grammar */
+.grammar-list li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.grammar-list li:last-child { border-bottom: none; }
+.grammar-list strong { display: block; margin-bottom: 4px; }
+.grammar-list p { margin: 0; color: var(--muted); }
+
+/* Discussion */
+.discussion-list { padding-left: 1.2em; list-style: decimal; }
+.discussion-list li { margin: 8px 0; }

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Danish Daily</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-row">
+      <span class="brand">Danish Daily</span>
+      <span id="meta" class="meta"></span>
+    </div>
+  </header>
+
+  <main id="app">
+    <p class="loading">Loading today's lesson&hellip;</p>
+  </main>
+
+  <template id="lesson-template">
+    <article class="lesson">
+      <h1 class="title"></h1>
+      <p class="byline">
+        <span class="source"></span>
+        &middot; <a class="src-link" target="_blank" rel="noopener">Read on source</a>
+        &middot; <span class="difficulty"></span>
+      </p>
+
+      <section class="block summary">
+        <h2>Summary <span class="lang">(English)</span></h2>
+        <p class="english-summary"></p>
+      </section>
+
+      <section class="block article">
+        <h2>Article <span class="lang">(Dansk)</span></h2>
+        <div class="danish-text"></div>
+      </section>
+
+      <section class="block vocab">
+        <h2>Vocabulary</h2>
+        <ul class="vocab-list"></ul>
+      </section>
+
+      <section class="block grammar">
+        <h2>Grammar notes</h2>
+        <ul class="grammar-list"></ul>
+      </section>
+
+      <section class="block discussion">
+        <h2>Discussion questions</h2>
+        <ul class="discussion-list"></ul>
+      </section>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

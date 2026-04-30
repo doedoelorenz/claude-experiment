@@ -20,8 +20,10 @@ from fetch_rss import fetch_all_feeds, fetch_url
 from dissect import dissect_article
 
 ROOT = Path(__file__).parent.parent
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "docs" / "data"
 USED_URLS_FILE = DATA_DIR / "_used_urls.json"
+LATEST_FILE = DATA_DIR / "latest.json"
+INDEX_FILE = DATA_DIR / "index.json"
 
 
 def extract_article_body(url: str) -> str | None:
@@ -99,13 +101,29 @@ def main() -> None:
     lesson["pub_date"] = article["pub_date"]
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(lesson, ensure_ascii=False, indent=2), encoding="utf-8")
+    payload = json.dumps(lesson, ensure_ascii=False, indent=2)
+    out_path.write_text(payload, encoding="utf-8")
+    LATEST_FILE.write_text(payload, encoding="utf-8")
     save_used_url(article["link"])
+    update_manifest()
 
     print(f"\nSaved lesson to {out_path}")
     print(f"  vocab:  {len(lesson.get('vocabulary', []))} words")
     print(f"  grammar: {len(lesson.get('grammar_notes', []))} notes")
     print(f"  difficulty: {lesson.get('difficulty', '?')}")
+
+
+def update_manifest() -> None:
+    """Write docs/data/index.json with a sorted list of available lesson dates."""
+    dates = sorted(
+        (p.stem for p in DATA_DIR.glob("*.json")
+         if p.stem not in {"latest", "index", "_used_urls"}),
+        reverse=True,
+    )
+    INDEX_FILE.write_text(
+        json.dumps({"latest": dates[0] if dates else None, "all": dates}, indent=2),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":
