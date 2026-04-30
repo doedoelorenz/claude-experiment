@@ -1,172 +1,180 @@
 {
-  "danish_text_clean": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa. Han tjener 39 millioner kroner, er i en liga for sig blandt valgte ledere og får kritik for at være langt fra fodboldens rødder.\n\nNogle mennesker får løn for at redde liv. Andre får løn for at undervise børn, reparere kloakker, lave pålæg, tegne huse eller holde styr på verden, når den er ved at falde fra hinanden en tirsdag eftermiddag.\n\nGianni Infantino får løn for at lede verdens mest populære leg: fodbold. Et traditionsrigt spil, der kloden rundt får bestøvlede børn til at jage en slidt bold over støvede baner, får mennesker med store hjerter til at tilbringe halve liv i klubhuse og får voksne til at råbe af fjernsynet, som om verden – eller i det mindste stillingen – kan ændre sig, hvis bare de brøler højt nok.",
-  "english_translation": "Gianni Infantino has, over ten years, more than tripled his salary as president of FIFA. He earns 39 million kroner, is in a league of his own among elected leaders, and is being criticized for being far from football's roots.\n\nSome people are paid to save lives. Others are paid to teach children, repair sewers, make cold cuts, design houses, or keep the world together when it is about to fall apart on a Tuesday afternoon.\n\nGianni Infantino is paid to lead the world's most popular game: football. A game rich in tradition that, around the globe, gets boot-wearing children to chase a worn ball across dusty pitches, gets people with big hearts to spend half their lives in clubhouses, and gets adults to shout at the television as if the world – or at least the score – can change, if only they roar loudly enough.",
+  "danish_text_clean": "Mamdani gik i åben krig med mangemilliardær. Så lærte han lektien\n\nNew Yorks socialistiske borgmester dæmoniserede og udskammede en af verdens rigeste mænd. Men fjenden slog hårdt igen, og det bør Demokraterne notere sig, skriver Berlingskes internationale kommentator.",
+  "english_translation": "Mamdani went to open war with a multi-billionaire. Then he learned the lesson\n\nNew York's socialist mayor demonized and publicly shamed one of the world's richest men. But the enemy struck back hard, and the Democrats ought to take note of that, writes Berlingske's international commentator.",
   "vocabulary": [
     {
-      "word": "løn",
-      "lemma": "løn",
+      "word": "krig",
+      "lemma": "krig",
       "pos": "noun",
-      "english": "salary, pay, wage",
-      "example_from_article": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa.",
-      "note": "Very common word. Do not confuse with 'løbe' (to run). 'Lønforhøjelse' = pay rise.",
+      "english": "war",
+      "example_from_article": "Mamdani gik i åben krig med mangemilliardær.",
+      "note": "'Gå i krig med' means 'to go to war with / to wage war against'. 'Åben krig' = open warfare.",
       "gender": "en",
-      "indefinite_singular": "en løn",
-      "definite_singular": "lønnen",
-      "indefinite_plural": "lønninger",
-      "definite_plural": "lønningerne"
+      "indefinite_singular": "en krig",
+      "definite_singular": "krigen",
+      "indefinite_plural": "krige",
+      "definite_plural": "krigene"
     },
     {
-      "word": "tredoblet",
-      "lemma": "tredoble",
+      "word": "mangemilliardær",
+      "lemma": "mangemilliardær",
+      "pos": "noun",
+      "english": "multi-billionaire",
+      "example_from_article": "Mamdani gik i åben krig med mangemilliardær.",
+      "note": "Compound word: 'mange' (many) + 'milliardær' (billionaire). Danish journalism frequently builds such compounds without spaces.",
+      "gender": "en",
+      "indefinite_singular": "en mangemilliardær",
+      "definite_singular": "mangemilliardæren",
+      "indefinite_plural": "mangemilliardærer",
+      "definite_plural": "mangemilliardærerne"
+    },
+    {
+      "word": "lektien",
+      "lemma": "lektie",
+      "pos": "noun",
+      "english": "the lesson, the homework assignment",
+      "example_from_article": "Så lærte han lektien.",
+      "note": "'Lektie' means a school lesson or homework task. Here used figuratively: 'lære lektien' = 'to learn one's lesson'. Don't confuse with 'lektion' (a class session).",
+      "gender": "en",
+      "indefinite_singular": "en lektie",
+      "definite_singular": "lektien",
+      "indefinite_plural": "lektier",
+      "definite_plural": "lektierne"
+    },
+    {
+      "word": "borgmester",
+      "lemma": "borgmester",
+      "pos": "noun",
+      "english": "mayor",
+      "example_from_article": "New Yorks socialistiske borgmester dæmoniserede og udskammede en af verdens rigeste mænd.",
+      "note": "Literally 'town master'. Irregular plural: 'borgmestre'. Common in Danish political reporting.",
+      "gender": "en",
+      "indefinite_singular": "en borgmester",
+      "definite_singular": "borgmesteren",
+      "indefinite_plural": "borgmestre",
+      "definite_plural": "borgmestrene"
+    },
+    {
+      "word": "fjenden",
+      "lemma": "fjende",
+      "pos": "noun",
+      "english": "the enemy",
+      "example_from_article": "Men fjenden slog hårdt igen.",
+      "note": "Opposite of 'ven' (friend). The definite singular '-en' ending is regular here.",
+      "gender": "en",
+      "indefinite_singular": "en fjende",
+      "definite_singular": "fjenden",
+      "indefinite_plural": "fjender",
+      "definite_plural": "fjenderne"
+    },
+    {
+      "word": "dæmoniserede",
+      "lemma": "dæmonisere",
       "pos": "verb",
-      "english": "tripled, to triple",
-      "example_from_article": "Gianni Infantino har på ti år mere end tredoblet sin løn som præsident for Fifa.",
-      "note": "Compound: 'tre' (three) + 'doble' (to double). Pattern: 'fordoble' (double), 'firedoble' (quadruple).",
-      "infinitive": "at tredoble",
-      "present_tense": "tredobler",
-      "past_tense": "tredoblede",
-      "past_participle": "tredoblet"
+      "english": "demonized, to demonize",
+      "example_from_article": "New Yorks socialistiske borgmester dæmoniserede og udskammede en af verdens rigeste mænd.",
+      "note": "Loanword from Greek/Latin via English. Regular -erede past tense, common for foreign verbs adopted into Danish.",
+      "infinitive": "at dæmonisere",
+      "present_tense": "dæmoniserer",
+      "past_tense": "dæmoniserede",
+      "past_participle": "dæmoniseret"
     },
     {
-      "word": "voldsomt",
-      "lemma": "voldsom",
-      "pos": "adj",
-      "english": "enormous, extreme, intense",
-      "example_from_article": "»Det er et voldsomt beløb«",
-      "note": "Literally 'violent', but very commonly used to mean 'extreme' or 'massive' in everyday speech. Mild false friend with English 'violent'. Forms: voldsom / voldsomt / voldsomme."
-    },
-    {
-      "word": "beløb",
-      "lemma": "beløb",
-      "pos": "noun",
-      "english": "amount, sum (of money)",
-      "example_from_article": "»Det er et voldsomt beløb«",
-      "note": "Neuter noun with identical singular and plural forms: 'et beløb / beløb'.",
-      "gender": "et",
-      "indefinite_singular": "et beløb",
-      "definite_singular": "beløbet",
-      "indefinite_plural": "beløb",
-      "definite_plural": "beløbene"
-    },
-    {
-      "word": "rødder",
-      "lemma": "rod",
-      "pos": "noun",
-      "english": "roots",
-      "example_from_article": "...og får kritik for at være langt fra fodboldens rødder.",
-      "note": "Irregular umlaut plural: rod → rødder. Used both literally (tree roots) and figuratively (one's origins/roots).",
-      "gender": "en",
-      "indefinite_singular": "en rod",
-      "definite_singular": "roden",
-      "indefinite_plural": "rødder",
-      "definite_plural": "rødderne"
-    },
-    {
-      "word": "kloakker",
-      "lemma": "kloak",
-      "pos": "noun",
-      "english": "sewers, drains",
-      "example_from_article": "Andre får løn for at undervise børn, reparere kloakker, lave pålæg...",
-      "note": "",
-      "gender": "en",
-      "indefinite_singular": "en kloak",
-      "definite_singular": "kloakken",
-      "indefinite_plural": "kloakker",
-      "definite_plural": "kloakkerne"
-    },
-    {
-      "word": "traditionsrigt",
-      "lemma": "traditionsrig",
-      "pos": "adj",
-      "english": "rich in tradition, steeped in tradition",
-      "example_from_article": "Et traditionsrigt spil, der kloden rundt får bestøvlede børn...",
-      "note": "Compound with suffix '-rig' (rich in). Productive pattern: 'næringsrig' (nutritious), 'farverig' (colourful). Here in neuter form '-rigt' agreeing with 'spil' (et spil)."
-    },
-    {
-      "word": "bestøvlede",
-      "lemma": "bestøvlet",
-      "pos": "adj",
-      "english": "wearing boots, booted",
-      "example_from_article": "...der kloden rundt får bestøvlede børn til at jage en slidt bold...",
-      "note": "From 'støvle' (boot) with prefix 'be-'. The 'be-' prefix commonly forms adjectives meaning 'equipped with something': 'bevæbnet' (armed), 'bevidst' (conscious)."
-    },
-    {
-      "word": "slidt",
-      "lemma": "slidt",
-      "pos": "adj",
-      "english": "worn, worn-out, battered",
-      "example_from_article": "...får bestøvlede børn til at jage en slidt bold over støvede baner.",
-      "note": "Also the past participle of 'at slide' (to wear out, to toil hard). Context determines meaning. Definite/plural form: slidte."
-    },
-    {
-      "word": "tilbringe",
-      "lemma": "tilbringe",
+      "word": "udskammede",
+      "lemma": "udskamme",
       "pos": "verb",
-      "english": "to spend (time)",
-      "example_from_article": "...får mennesker med store hjerter til at tilbringe halve liv i klubhuse.",
-      "note": "Used only for spending time, never money. For spending money use 'at bruge'. Irregular: tilbragte / tilbragt.",
-      "infinitive": "at tilbringe",
-      "present_tense": "tilbringer",
-      "past_tense": "tilbragte",
-      "past_participle": "tilbragt"
+      "english": "publicly shamed, to shame",
+      "example_from_article": "New Yorks socialistiske borgmester dæmoniserede og udskammede en af verdens rigeste mænd.",
+      "note": "'Ud-' prefix adds a sense of outward, public action. Related to 'skam' (shame). Modern word often used in political and social commentary.",
+      "infinitive": "at udskamme",
+      "present_tense": "udskammer",
+      "past_tense": "udskammede",
+      "past_participle": "udskammet"
     },
     {
-      "word": "stillingen",
-      "lemma": "stilling",
-      "pos": "noun",
-      "english": "the score (in sport); position, job",
-      "example_from_article": "...som om verden – eller i det mindste stillingen – kan ændre sig...",
-      "note": "Multi-meaning word. Here 'stillingen' = the score in a football match. It also commonly means 'a job/position' (e.g. 'en god stilling').",
-      "gender": "en",
-      "indefinite_singular": "en stilling",
-      "definite_singular": "stillingen",
-      "indefinite_plural": "stillinger",
-      "definite_plural": "stillingerne"
-    },
-    {
-      "word": "brøler",
-      "lemma": "brøle",
+      "word": "slog",
+      "lemma": "slå",
       "pos": "verb",
-      "english": "to roar, to bellow, to shout",
-      "example_from_article": "...som om verden kan ændre sig, hvis bare de brøler højt nok.",
-      "note": "Primarily used for animals (lions, cows), but here used figuratively for humans shouting loudly. Also: 'en brøler' (noun) = a blunder/howler.",
-      "infinitive": "at brøle",
-      "present_tense": "brøler",
-      "past_tense": "brølede",
-      "past_participle": "brølet"
+      "english": "struck, hit",
+      "example_from_article": "Men fjenden slog hårdt igen.",
+      "note": "Irregular strong verb. 'Slå igen' is a fixed expression meaning 'to strike back / to retaliate'. Not to be confused with 'slå igen' meaning 'to close again' in other contexts.",
+      "infinitive": "at slå",
+      "present_tense": "slår",
+      "past_tense": "slog",
+      "past_participle": "slået"
+    },
+    {
+      "word": "bør",
+      "lemma": "burde",
+      "pos": "verb",
+      "english": "should, ought to",
+      "example_from_article": "det bør Demokraterne notere sig",
+      "note": "Modal verb expressing moral obligation or strong recommendation. Present tense 'bør' is stronger than 'skulle' — closer to 'ought to' than 'should'.",
+      "infinitive": "at burde",
+      "present_tense": "bør",
+      "past_tense": "burde",
+      "past_participle": "burdet"
+    },
+    {
+      "word": "notere sig",
+      "lemma": "notere sig",
+      "pos": "verb",
+      "english": "to take note of, to make a mental note",
+      "example_from_article": "det bør Demokraterne notere sig",
+      "note": "Reflexive verb. 'Notere sig noget' = 'to note something (for oneself)'. The reflexive 'sig' signals the action benefits or affects the subject.",
+      "infinitive": "at notere sig",
+      "present_tense": "noterer sig",
+      "past_tense": "noterede sig",
+      "past_participle": "noteret sig"
+    },
+    {
+      "word": "hårdt",
+      "lemma": "hård",
+      "pos": "adv",
+      "english": "hard, fiercely, severely",
+      "example_from_article": "Men fjenden slog hårdt igen.",
+      "note": "Adverbial/neuter form of the adjective 'hård'. In Danish, many adjectives add '-t' to function as adverbs: 'hurtig' → 'hurtigt', 'stærk' → 'stærkt'."
+    },
+    {
+      "word": "socialistiske",
+      "lemma": "socialistisk",
+      "pos": "adj",
+      "english": "socialist",
+      "example_from_article": "New Yorks socialistiske borgmester dæmoniserede og udskammede en af verdens rigeste mænd.",
+      "note": "The '-e' ending marks the definite or plural form of the adjective, required here because 'borgmester' is preceded by the genitive 'New Yorks' (acting like a definite article)."
     }
   ],
   "grammar_notes": [
     {
-      "topic": "Modal verb 'kan' (can / to be able to)",
+      "topic": "Modal verb 'bør' (ought to / should)",
       "category": "modal verb",
-      "explanation": "'Kan' is the present tense of 'at kunne'. Like all Danish modal verbs, it is followed directly by an infinitive without 'at': 'verden kan ændre sig' (the world can change). Note that 'kan' never takes the normal present-tense '-r' ending — it is already the present form."
+      "explanation": "The article uses 'bør' in 'det bør Demokraterne notere sig'. 'Bør' is the present tense of 'at burde' and expresses a moral obligation or strong recommendation — slightly stronger than 'skulle'. Notice the inverted word order: when an element other than the subject opens the clause ('det'), the subject ('Demokraterne') moves after the verb."
     },
     {
-      "topic": "Purpose clause: 'for at' + infinitive",
-      "category": "connector",
-      "explanation": "'For at' introduces a purpose clause meaning 'in order to'. The article repeats the pattern: 'løn for at redde liv', 'for at undervise børn', 'for at lede verdens mest populære leg'. This is equivalent to English 'to' or 'in order to' and is one of the most common constructions in Danish."
-    },
-    {
-      "topic": "Construction: 'er ved at' (to be about to / in the process of)",
-      "category": "syntax",
-      "explanation": "'Er ved at' + infinitive signals that something is on the verge of happening: 'når den er ved at falde fra hinanden' (when it is about to fall apart). Compare with 'er i gang med at' (is in the middle of doing). Both constructions are very common in spoken and written Danish."
-    },
-    {
-      "topic": "Adverb 'bare' (just, only, simply)",
+      "topic": "Adverb formation: adjective + '-t'",
       "category": "adverb",
-      "explanation": "'Bare' here means 'just' or 'only', synonymous with 'kun': 'hvis bare de brøler højt nok' (if only they shout loudly enough). 'Bare' is also used in reassurances ('Bare rolig!' = 'Just relax!') and is extremely frequent in informal Danish — far more versatile than its English equivalent."
+      "explanation": "'Hårdt' in 'slog hårdt igen' is the adverbial form of the adjective 'hård' (hard/tough). Danish regularly forms adverbs this way: add '-t' to the base adjective. Examples: 'hurtig' → 'hurtigt', 'stærk' → 'stærkt', 'hård' → 'hårdt'. This pattern is very productive and worth memorizing as a rule."
+    },
+    {
+      "topic": "Connector 'men' (but) — contrastive conjunction",
+      "category": "connector",
+      "explanation": "'Men' introduces a clause that contradicts what came before: 'Men fjenden slog hårdt igen' reverses the expectation that the mayor's attack would go unanswered. 'Men' always connects two independent main clauses. Contrast with 'selvom' (even though), which introduces a subordinate clause and changes word order."
+    },
+    {
+      "topic": "Irregular past tense: 'slå' → 'slog'",
+      "category": "tense",
+      "explanation": "'Slog' is the strong/irregular past tense of 'at slå' (to hit, to strike). The article's 'slog hårdt igen' means 'struck back hard'. Danish has many such strong verbs that change their vowel in the past tense rather than adding '-ede': 'slå/slog', 'gå/gik', 'se/så', 'stå/stod'. These must be memorized individually."
     }
   ],
   "difficulty": "B1",
   "discussion_questions": [
-    "Hvad synes du om Gianni Infantinos løn – er den for høj?",
-    "Hvem i dit land tjener for meget, og hvem tjener for lidt?",
-    "Hvad betyder fodbold for dig – er det bare en leg eller noget mere?"
+    "Hvad betyder det at 'lære lektien'? Hvad er lektien i denne artikel?",
+    "Synes du, at det er effektivt at dæmonisere politiske modstandere? Hvorfor eller hvorfor ikke?",
+    "Hvad bør Demokraterne gøre anderledes, tror du?"
   ],
   "date": "2026-04-30",
-  "source": "Politiken",
-  "title": "»Det er et voldsomt beløb«: Infantinos løn er eksploderet og er i en liga for sig",
-  "url": "https://politiken.dk/sport/fodbold/art10811902/%C2%BBDet-er-et-voldsomt-bel%C3%B8b%C2%AB-Infantinos-l%C3%B8n-er-eksploderet-og-er-i-en-liga-for-sig",
-  "pub_date": "Thu, 30 Apr 2026 07:49:56 +0200"
+  "source": "Berlingske",
+  "title": "Mamdani gik i åben krig med mangemilliardær. Så lærte han lektien",
+  "url": "https://www.berlingske.dk/kommentatorer/mamdani-gik-i-aaben-krig-med-mangemilliardaer-saa-laerte-han-lektien?referrer=RSS",
+  "pub_date": "Thu, 30 Apr 2026 11:09:17 GMT"
 }
