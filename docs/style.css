@@ -168,21 +168,87 @@ main {
   color: var(--muted);
   border-left: 2px solid var(--border);
   padding-left: 10px;
-  margin: 6px 0;
+  margin: 8px 0;
 }
 .note {
   background: var(--note-bg);
   border-radius: 6px;
   padding: 8px 10px;
   font-size: 0.92rem;
-  margin-top: 6px;
+  margin-top: 8px;
+}
+
+/* Verb conjugations / Noun forms (DL grid) */
+.forms {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 12px;
+  row-gap: 4px;
+  margin: 6px 0 4px;
+  padding: 8px 10px;
+  background: var(--code);
+  border-radius: 6px;
+  font-size: 0.93rem;
+}
+.forms dt {
+  color: var(--muted);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  align-self: center;
+}
+.forms dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.gender {
+  display: inline-block;
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+.gender-en { background: #e8f0ff; color: #1d4ed8; border: 1px solid #c7d8ff; }
+.gender-et { background: #fff0e8; color: #c2410c; border: 1px solid #ffd2b8; }
+@media (prefers-color-scheme: dark) {
+  .gender-en { background: #1a2444; color: #93b8ff; border-color: #2a3a66; }
+  .gender-et { background: #3a230f; color: #ffb38a; border-color: #5c3a1c; }
 }
 
 /* Grammar */
-.grammar-list li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.grammar-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
 .grammar-list li:last-child { border-bottom: none; }
-.grammar-list strong { display: block; margin-bottom: 4px; }
+.grammar-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.grammar-list strong { font-size: 1.02rem; }
 .grammar-list p { margin: 0; color: var(--muted); }
+.cat {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--code);
+}
+
+/* English translation block — slightly de-emphasized vs. Danish */
+.english-translation p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.english-translation p:last-child { margin-bottom: 0; }
 
 /* Discussion */
 .discussion-list { padding-left: 1.2em; list-style: decimal; }

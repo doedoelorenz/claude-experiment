@@ -48,7 +48,19 @@ Key Windows-specific detail: Claude Code requires `CLAUDE_CODE_GIT_BASH_PATH` po
 
 ## JSON lesson schema
 
-`data/YYYY-MM-DD.json` contains: `english_summary`, `danish_text_clean`, `vocabulary[]` (word/lemma/pos/english/example/note), `grammar_notes[]`, `difficulty` (A2/B1/B2), `discussion_questions[]`, plus metadata (`date`, `source`, `title`, `url`, `pub_date`).
+`docs/data/YYYY-MM-DD.json` contains:
+
+- `danish_text_clean` — cleaned Danish article text (paragraphs separated by `\n\n`)
+- `english_translation` — direct sentence-by-sentence translation (NOT a summary)
+- `vocabulary[]` — each entry has `word`, `lemma`, `pos`, `english`, `example_from_article`, `note`, plus:
+  - **Verbs:** `infinitive`, `present_tense`, `past_tense`, `past_participle`
+  - **Nouns:** `gender` (`en`/`et`), `indefinite_singular`, `definite_singular`, `indefinite_plural`, `definite_plural`
+- `grammar_notes[]` — each has `topic`, `category` (`modal verb` / `adverb` / `connector` / `syntax` / `tense` / `other`), `explanation`. Prompt aims for 3-4 covering different categories.
+- `difficulty` — `A2`, `B1`, or `B2`
+- `discussion_questions[]` — 1-3 questions in Danish
+- Metadata: `date`, `source`, `title`, `url`, `pub_date`
+
+Web UI section order: **Danish article → Vocabulary → English translation → Grammar notes → Discussion**.
 
 ## GitHub
 

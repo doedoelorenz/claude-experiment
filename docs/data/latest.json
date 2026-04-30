@@ -1,30 +1,53 @@
 {
-  "english_summary": "Mark Zuckerberg is reportedly working on an AI-powered clone of himself, which would appear in an advanced 3D format and hold meetings with Meta employees on his behalf. The article also notes that US tech giants are pouring billions into AI ventures whose full scope and consequences remain unclear. The piece is a commentary by journalist Michael Jarlner published in the Danish newspaper Politiken.",
   "danish_text_clean": "Facebook-stifteren Mark Zuckerberg er i gang med at finde en afløser: En kunstigt intelligent klon af ham selv.\n\nKlonen vil efter planen optræde i et avanceret 3D-format og kan derefter holde møder med medarbejderne i Facebook-moderselskabet, Meta.\n\nUSA's teknologigiganter sprøjter milliarder ind i et ai-eventyr, som ingen kan overskue hverken omfanget eller konsekvensen af. Natten til torsdag kom der nye vilde tal, fortæller Michael Jarlner om i denne kommentar.",
+  "english_translation": "Facebook founder Mark Zuckerberg is in the process of finding a replacement: An artificially intelligent clone of himself.\n\nThe clone will, according to plan, appear in an advanced 3D format and can then hold meetings with employees at Facebook's parent company, Meta.\n\nThe US technology giants are pumping billions into an AI adventure that no one can fully grasp the scope or consequences of. On Thursday morning, new wild figures emerged, which Michael Jarlner discusses in this commentary.",
   "vocabulary": [
+    {
+      "word": "påfund",
+      "lemma": "påfund",
+      "pos": "noun",
+      "english": "scheme, brainchild, far-fetched idea",
+      "example_from_article": "Er Zuckerbergs nyeste påfund alligevel for vildt?",
+      "note": "Carries a slightly ironic or skeptical tone — implies the idea is eccentric or outlandish.",
+      "gender": "et",
+      "indefinite_singular": "et påfund",
+      "definite_singular": "påfundet",
+      "indefinite_plural": "påfund",
+      "definite_plural": "påfundene"
+    },
     {
       "word": "stifteren",
       "lemma": "stifter",
       "pos": "noun",
-      "english": "founder, establisher",
+      "english": "founder",
       "example_from_article": "Facebook-stifteren Mark Zuckerberg er i gang med at finde en afløser.",
-      "note": "en-word (en stifter, stifteren). Common suffix: -er = person who does something, like 'lærer' (teacher)."
+      "note": "Definite form of 'stifter'. Commonly appears in compounds: 'stifter' alone or 'virksomhedsstifter' (company founder).",
+      "gender": "en",
+      "indefinite_singular": "en stifter",
+      "definite_singular": "stifteren",
+      "indefinite_plural": "stiftere",
+      "definite_plural": "stifterne"
     },
     {
       "word": "afløser",
       "lemma": "afløser",
       "pos": "noun",
-      "english": "replacement, stand-in, substitute",
+      "english": "replacement, substitute, successor",
       "example_from_article": "Mark Zuckerberg er i gang med at finde en afløser.",
-      "note": "en-word. From the verb 'afløse' (to relieve, replace). Also used for a substitute worker or successor."
+      "note": "From the verb 'at afløse' (to relieve, replace). Also used in sports for a substitute player.",
+      "gender": "en",
+      "indefinite_singular": "en afløser",
+      "definite_singular": "afløseren",
+      "indefinite_plural": "afløsere",
+      "definite_plural": "afløserne"
     },
     {
       "word": "kunstigt",
       "lemma": "kunstig",
       "pos": "adj",
-      "english": "artificial",
+      "english": "artificial, synthetic",
       "example_from_article": "En kunstigt intelligent klon af ham selv.",
-      "note": "Adverbial form of 'kunstig'. 'Kunstig intelligens' = artificial intelligence (AI). Note: 'kunst' alone means 'art'."
+      "note": "Used here as an adverb modifying 'intelligent'. 'Kunstig intelligens' = artificial intelligence. The -t ending appears when 'kunstig' is used adverbially."
     },
     {
       "word": "optræde",
@@ -32,7 +55,11 @@
       "pos": "verb",
       "english": "to appear, to perform, to act",
       "example_from_article": "Klonen vil efter planen optræde i et avanceret 3D-format.",
-      "note": "Separable verb: op + træde. In formal or media contexts means 'to appear/feature'. Also used for stage performances."
+      "note": "Can mean both 'to perform on stage' and 'to appear/show up'. Context determines which meaning applies.",
+      "infinitive": "at optræde",
+      "present_tense": "optræder",
+      "past_tense": "optrådte",
+      "past_participle": "optrådt"
     },
     {
       "word": "avanceret",
@@ -40,88 +67,90 @@
       "pos": "adj",
       "english": "advanced, sophisticated",
       "example_from_article": "Klonen vil efter planen optræde i et avanceret 3D-format.",
-      "note": "Past participle of 'avancere' used as adjective. Borrowed from French. Common in tech contexts."
+      "note": "Borrowed from French via English. Widely used in Danish for technology, skills, and ideas."
     },
     {
       "word": "moderselskabet",
       "lemma": "moderselskab",
       "pos": "noun",
       "english": "parent company",
-      "example_from_article": "holde møder med medarbejderne i Facebook-moderselskabet, Meta.",
-      "note": "et-word, definite: moderselskabet. Compound: 'moder' (mother) + 'selskab' (company). Danish frequently builds long compound nouns this way."
-    },
-    {
-      "word": "teknologigiganter",
-      "lemma": "teknologigigant",
-      "pos": "noun",
-      "english": "tech giants",
-      "example_from_article": "USA's teknologigiganter sprøjter milliarder ind i et ai-eventyr.",
-      "note": "en-word, plural: teknologigiganter. Triple compound: teknologi + gi + gant. The plural of en-words typically adds -er or -e."
+      "example_from_article": "Holde møder med medarbejderne i Facebook-moderselskabet, Meta.",
+      "note": "Compound: 'moder' (mother) + 'selskab' (company). Danish uses 'moder-' in business compounds where English says 'parent'.",
+      "gender": "et",
+      "indefinite_singular": "et moderselskab",
+      "definite_singular": "moderselskabet",
+      "indefinite_plural": "moderselskaber",
+      "definite_plural": "moderselskaberne"
     },
     {
       "word": "sprøjter",
       "lemma": "sprøjte",
       "pos": "verb",
-      "english": "to inject, to pump, to spray",
+      "english": "to pump, to inject, to spray",
       "example_from_article": "USA's teknologigiganter sprøjter milliarder ind i et ai-eventyr.",
-      "note": "Here used figuratively: 'sprøjte penge ind i noget' = to pump money into something. Literally means to spray or inject a liquid."
+      "note": "Literally 'to spray/squirt'. Used figuratively here with 'ind i' (into) to mean pouring money into something — vivid journalistic language.",
+      "infinitive": "at sprøjte",
+      "present_tense": "sprøjter",
+      "past_tense": "sprøjtede",
+      "past_participle": "sprøjtet"
     },
     {
       "word": "overskue",
       "lemma": "overskue",
       "pos": "verb",
-      "english": "to comprehend, to have a full overview of, to manage",
-      "example_from_article": "som ingen kan overskue hverken omfanget eller konsekvensen af.",
-      "note": "Tricky word: 'overskue' does NOT mean 'overlook' (ignore) as in English. It means to be able to survey or grasp something fully. A partial false friend."
+      "english": "to grasp fully, to comprehend, to get an overview of",
+      "example_from_article": "Som ingen kan overskue hverken omfanget eller konsekvensen af.",
+      "note": "False-friend risk: does NOT mean 'to overlook' (ignore). 'Jeg kan ikke overskue det' = I can't get my head around it / it's overwhelming.",
+      "infinitive": "at overskue",
+      "present_tense": "overskuer",
+      "past_tense": "overskuede",
+      "past_participle": "overskuet"
     },
     {
       "word": "omfanget",
       "lemma": "omfang",
       "pos": "noun",
       "english": "scope, extent, scale",
-      "example_from_article": "som ingen kan overskue hverken omfanget eller konsekvensen af.",
-      "note": "et-word, definite: omfanget. From 'om' + 'fang' (grasp). Very common in formal and journalistic Danish."
-    },
-    {
-      "word": "vilde",
-      "lemma": "vild",
-      "pos": "adj",
-      "english": "wild; (colloquial) incredible, mind-blowing, crazy",
-      "example_from_article": "kom der nye vilde tal.",
-      "note": "In everyday and journalistic Danish, 'vild' is commonly used as slang for 'amazing' or 'shocking'. Here: 'vilde tal' = staggering/mind-blowing numbers."
-    },
-    {
-      "word": "medarbejderne",
-      "lemma": "medarbejder",
-      "pos": "noun",
-      "english": "employees, staff members, colleagues",
-      "example_from_article": "kan derefter holde møder med medarbejderne i Facebook-moderselskabet.",
-      "note": "en-word. Definite plural: medarbejderne. Compound: 'med' (with) + 'arbejder' (worker). More neutral/respectful than 'ansatte' (the employed)."
+      "example_from_article": "Som ingen kan overskue hverken omfanget eller konsekvensen af.",
+      "note": "Frequent in formal and journalistic Danish. 'I stort omfang' = to a large extent.",
+      "gender": "et",
+      "indefinite_singular": "et omfang",
+      "definite_singular": "omfanget",
+      "indefinite_plural": "omfang",
+      "definite_plural": "omfangene"
     }
   ],
   "grammar_notes": [
     {
-      "topic": "Danish compound nouns",
-      "explanation": "Danish strings nouns together into single words without spaces, often creating very long compounds. This article has several examples: 'Facebook-stifteren' (Facebook founder), 'moderselskabet' (parent company), 'teknologigiganter' (tech giants), and 'ai-eventyr' (AI adventure). The last element determines the gender and plural form of the whole compound."
+      "topic": "Modal verb 'kan' (can / to be able to)",
+      "category": "modal verb",
+      "explanation": "'Kan derefter holde møder' and 'ingen kan overskue' both use 'kan', present tense of 'at kunne'. Like all Danish modals, it is followed by a bare infinitive — no 'at'. 'Kan' expresses ability or possibility and is one of the most frequent modal verbs in Danish."
     },
     {
-      "topic": "Modal verb 'vil' — future vs. intention",
-      "explanation": "'Vil' is used here in 'Klonen vil efter planen optræde i et avanceret 3D-format.' Danish uses 'vil' both as a future marker (will) and to express wanting/intending. In this sentence it signals a planned future event. Unlike English, Danish has no separate '-ing' form, so 'er i gang med at finde' (is in the process of finding) uses the infinitive with 'at'."
+      "topic": "Adverb 'derefter' (then / after that)",
+      "category": "adverb",
+      "explanation": "'Klonen kan derefter holde møder' — 'derefter' indicates temporal sequence: something happens first, then this follows. It belongs to a formal/written register. In spoken Danish, 'så' (so/then) or 'bagefter' (afterwards) are more common equivalents."
     },
     {
-      "topic": "Definite suffix vs. definite article",
-      "explanation": "Danish marks definiteness by adding a suffix to the noun rather than a separate word: 'en stifter' (a founder) → 'stifteren' (the founder); 'et selskab' (a company) → 'selskabet' (the company). When an adjective precedes the noun, a separate 'den/det/de' is added as well (double definiteness), but in this article most definite nouns appear without a preceding adjective."
+      "topic": "Correlative conjunction 'hverken … eller' (neither … nor)",
+      "category": "connector",
+      "explanation": "'Ingen kan overskue hverken omfanget eller konsekvensen af' uses 'hverken…eller' to negate two items in parallel, equivalent to English 'neither…nor'. The negation is already carried by 'ingen' (no one), so 'hverken…eller' adds emphatic parallel structure. Learn these correlative pairs together: 'både…og' (both…and), 'enten…eller' (either…or), 'hverken…eller' (neither…nor)."
+    },
+    {
+      "topic": "Progressive construction 'er i gang med at + infinitive'",
+      "category": "syntax",
+      "explanation": "'Zuckerberg er i gang med at finde en afløser' — Danish has no true present progressive (-ing form). The phrase 'er i gang med at' (literally: is in the process of) followed by an infinitive fills this gap and emphasises that the action is actively ongoing. It is more emphatic than the simple present 'finder'."
     }
   ],
   "difficulty": "B1",
   "discussion_questions": [
-    "Hvad synes du om idéen med en kunstig klon af Zuckerberg? Er det en god idé for virksomheder?",
-    "Hvad betyder det, at 'ingen kan overskue konsekvensen' af ai? Kan du give et eksempel?",
-    "Kender du andre teknologigiganter end Meta? Hvad laver de?"
+    "Hvad synes du om ideen om at bruge en AI-klon til at holde møder på arbejde?",
+    "Hvilke problemer kan der opstå, hvis en AI-klon repræsenterer en rigtig person?",
+    "Er det godt eller dårligt, at store teknologivirksomheder investerer så mange penge i kunstig intelligens?"
   ],
   "date": "2026-04-30",
   "source": "Politiken",
-  "title": "Mark Zuckerberg har store planer, men han har lige fået en lussing",
-  "url": "https://politiken.dk/internationalt/art10822316/Mark-Zuckerberg-har-store-planer-men-han-har-lige-f%C3%A5et-en-lussing",
+  "title": "Er Zuckerbergs nyeste påfund alligevel for vildt?",
+  "url": "https://politiken.dk/internationalt/art10822316/Er-Zuckerbergs-nyeste-p%C3%A5fund-alligevel-for-vildt",
   "pub_date": "Thu, 30 Apr 2026 09:57:03 +0200"
 }

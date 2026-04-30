@@ -8,39 +8,45 @@ CLAUDE_CMD = os.path.join(os.environ.get("APPDATA", ""), "npm", "claude.cmd")
 
 DISSECTION_PROMPT = """You are a Danish language tutor for a learner at the A2-B1 level.
 
-I will give you a Danish news article. Produce a JSON study lesson for it.
+I will give you a Danish news article. Produce a JSON study lesson.
 
 Output ONLY valid JSON, no markdown fences, no commentary before or after.
 
-Schema (all keys required):
-{{
-  "english_summary": "2-3 sentence summary of the article in English",
-  "danish_text_clean": "the article text in Danish, lightly cleaned (remove ads, navigation, footer cruft). Keep paragraph breaks as \\n\\n.",
-  "vocabulary": [
-    {{
-      "word": "Danish word as it appears in the article",
-      "lemma": "dictionary form",
-      "pos": "noun|verb|adj|adv|prep|conj|pron",
-      "english": "English meaning(s)",
-      "example_from_article": "the sentence from the article where this word appears",
-      "note": "optional grammar note (e.g. 'en-word', 'irregular plural', 'separable verb', 'false friend with English')"
-    }}
-  ],
-  "grammar_notes": [
-    {{
-      "topic": "short title (e.g. 'Definite article -en/-et')",
-      "explanation": "1-3 sentence explanation of how this grammar point appears in the article"
-    }}
-  ],
-  "difficulty": "A2 | B1 | B2",
-  "discussion_questions": [
-    "1-3 simple questions in Danish the learner could try to answer in writing"
-  ]
-}}
+Required keys:
 
-Pick 8-12 vocabulary words that are useful, common-but-tricky, or otherwise educational for an A2-B1 learner. Skip very basic words ('og', 'en', 'er'). Prefer words that appear in the article.
+- "danish_text_clean": the article text in Danish, lightly cleaned (remove ads, navigation, footer cruft). Keep paragraph breaks as \\n\\n.
 
-Pick 2-3 grammar notes from things visible in the article — pick interesting, relevant points.
+- "english_translation": A direct, sentence-by-sentence translation of the ENTIRE Danish text into natural English. NOT a summary — translate everything, preserving meaning and tone. Use \\n\\n for paragraph breaks matching the Danish.
+
+- "vocabulary": array of 8-12 word entries. Choose useful, tricky, or educational words for an A2-B1 learner. Skip very basic words ('og', 'en', 'er', 'det'). Each entry has:
+    - "word": Danish word as it appears in the article
+    - "lemma": dictionary form
+    - "pos": one of "noun", "verb", "adj", "adv", "prep", "conj", "pron"
+    - "english": English meaning(s)
+    - "example_from_article": the sentence where this word appears
+    - "note": optional general note (false friends, irregular forms, register, etc.)
+
+    For VERB entries, additionally include:
+    - "infinitive": e.g. "at spise"
+    - "present_tense": e.g. "spiser"
+    - "past_tense": e.g. "spiste"
+    - "past_participle": e.g. "spist"
+
+    For NOUN entries, additionally include:
+    - "gender": "en" or "et"
+    - "indefinite_singular": e.g. "en bil"
+    - "definite_singular": e.g. "bilen"
+    - "indefinite_plural": e.g. "biler"
+    - "definite_plural": e.g. "bilerne"
+
+- "grammar_notes": array of 3-4 entries covering DIFFERENT categories. Try to include modal verbs, adverbs, and connectors/conjunctions when they appear in the article. Each entry has:
+    - "topic": short title (e.g. "Modal verb 'kunne' (can)")
+    - "category": one of "modal verb", "adverb", "connector", "syntax", "tense", "other"
+    - "explanation": 1-3 sentences grounded in examples from the article
+
+- "difficulty": "A2", "B1", or "B2"
+
+- "discussion_questions": array of 1-3 simple questions in Danish the learner could answer in writing
 
 ARTICLE TITLE: {title}
 ARTICLE URL: {url}
