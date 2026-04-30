@@ -15,10 +15,23 @@ Always follow **explore → plan → code → commit** for non-trivial tasks. (S
 ```bash
 python scripts/daily_lesson.py            # generates today's lesson if not already present
 python scripts/daily_lesson.py --force    # regenerate today's lesson
+python scripts/daily_lesson.py --no-notify  # skip Telegram message
 python scripts/fetch_rss.py               # smoke-test the RSS feeds
+python scripts/telegram.py --test         # send a hello-world Telegram message
+scripts/run_daily.bat                     # end-to-end: lesson + commit + push (Task Scheduler entry point)
 ```
 
 Dependencies: `pip install -r requirements.txt` (just `trafilatura`).
+
+Secrets in `.env` (gitignored): `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `SITE_URL`. See `.env.example`.
+
+## Daily automation (Windows Task Scheduler)
+
+Register the included task once via:
+```bash
+schtasks /create /xml "scripts\danish_daily_task.xml" /tn "Danish Daily"
+```
+Runs `run_daily.bat` daily at 07:00. `StartWhenAvailable=true` so missed runs catch up the next time the laptop wakes. Logs append to `logs/daily.log` (gitignored).
 
 ## Architecture
 
