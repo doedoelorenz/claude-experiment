@@ -62,6 +62,19 @@ Key Windows-specific detail: Claude Code requires `CLAUDE_CODE_GIT_BASH_PATH` po
 
 Web UI section order: **Danish article → Vocabulary → English translation → Grammar notes → Discussion**.
 
+## Anki integration (browser-direct via AnkiConnect)
+
+Each vocab card on the web app shows a `+ Anki` button. Clicking it pushes a single note to the local Anki Desktop via the [AnkiConnect](https://github.com/FooSoft/anki-connect) addon — no Python or backend involved. Note model: `Danish Daily Vocab` (auto-created on first add). Deck: `Danish Daily`. Two card templates per note: Recognition (Da→En) + Production (En→Da). Tagged with `danish-daily`, `date::YYYY-MM-DD`, `source::xxx`, `pos::xxx`. Duplicate detection via AnkiConnect's `canAddNotes` (first-field + deck scope).
+
+**One-time user setup:**
+1. Anki Desktop → Tools → Add-ons → Get Add-ons → paste `2055492159` → restart Anki.
+2. Tools → Add-ons → AnkiConnect → Config → add `"https://doedoelorenz.github.io"` to `webCorsOriginList` array → restart Anki.
+3. Keep Anki Desktop running when using the button (can be minimized).
+
+Mobile (iOS/Android) doesn't work in v1 — there's no localhost service on the phone. The button silently fails with "Anki Desktop not reachable".
+
+Code: `docs/anki.js` is self-contained (AnkiConnect client + click handler). `docs/app.js` only renders the button + sets `window.__currentLesson`.
+
 ## GitHub
 
-Repo: github.com/doedoelorenz/claude-experiment (private). Authenticated via Git Credential Manager — `git push` works without further setup.
+Repo: github.com/doedoelorenz/claude-experiment (public). Authenticated via Git Credential Manager — `git push` works without further setup.

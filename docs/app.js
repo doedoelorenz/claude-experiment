@@ -102,6 +102,7 @@ function renderNounForms(v) {
 }
 
 function render(lesson) {
+  window.__currentLesson = lesson; // accessed by anki.js for per-vocab Add buttons
   $("#meta").textContent = `${lesson.date} · ${lesson.source} · ${lesson.difficulty}`;
 
   const tpl = $("#lesson-template").content.cloneNode(true);
@@ -115,7 +116,7 @@ function render(lesson) {
   renderParagraphs(lesson.english_translation || lesson.english_summary, $(".english-translation", tpl));
 
   const vocabUl = $(".vocab-list", tpl);
-  (lesson.vocabulary || []).forEach(v => {
+  (lesson.vocabulary || []).forEach((v, idx) => {
     const li = document.createElement("li");
     li.className = "vocab-item";
     const isVerb = v.pos === "verb";
@@ -125,6 +126,7 @@ function render(lesson) {
         <span class="word">${escape(v.word)}</span>
         ${v.lemma && v.lemma !== v.word ? `<span class="lemma">(${escape(v.lemma)})</span>` : ""}
         <span class="pos">${escape(v.pos || "")}</span>
+        <button class="add-to-anki" data-vocab-index="${idx}" aria-label="Add to Anki">+ Anki</button>
       </div>
       <div class="english">${escape(v.english || "")}</div>
       ${isVerb ? renderVerbForms(v) : ""}
