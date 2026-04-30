@@ -1,15 +1,65 @@
-// Danish Daily — fetches the latest lesson JSON and renders it.
+// Danish Daily — fetches a lesson JSON (latest or specific date) and renders it.
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
-async function loadLesson() {
-  const url = `data/latest.json?t=${Date.now()}`; // cache-bust
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`No lesson available (${res.status})`);
+let lessonIndex = { all: [], latest: null }; // populated from data/index.json
+
+// ---------- Data loading ----------
+
+async function loadIndex() {
+  try {
+    const res = await fetch(`data/index.json?t=${Date.now()}`);
+    if (!res.ok) return { all: [], latest: null };
+    return res.json();
+  } catch {
+    return { all: [], latest: null };
+  }
+}
+
+async function loadLesson(date) {
+  const file = date ? `${date}.json` : "latest.json";
+  const res = await fetch(`data/${file}?t=${Date.now()}`);
+  if (!res.ok) throw new Error(`No lesson found for ${date || "latest"} (${res.status})`);
   return res.json();
 }
 
+function getDateFromHash() {
+  const m = location.hash.match(/^#\/(\d{4}-\d{2}-\d{2})$/);
+  return m ? m[1] : null;
+}
+
+// ---------- Navigation ----------
+
+function updateNav(currentDate) {
+  const dates = lessonIndex.all || []; // sorted descending (newest first)
+  const idx = dates.indexOf(currentDate);
+  const prevBtn = $("#prev-day");
+  const nextBtn = $("#next-day");
+
+  const olderDate = idx >= 0 && idx < dates.length - 1 ? dates[idx + 1] : null;
+  const newerDate = idx > 0 ? dates[idx - 1] : null;
+
+  prevBtn.disabled = !olderDate;
+  prevBtn.dataset.date = olderDate || "";
+  nextBtn.disabled = !newerDate;
+  nextBtn.dataset.date = newerDate || "";
+}
+
+function navigateTo(date) {
+  if (!date) return;
+  // If clicking the latest, drop the hash so it still works after the next cron run.
+  if (date === lessonIndex.latest) {
+    history.replaceState(null, "", location.pathname);
+    loadAndRender();
+  } else {
+    location.hash = `/${date}`;
+  }
+}
+
+// ---------- Rendering ----------
+
 function renderParagraphs(text, container) {
+  container.innerHTML = "";
   (text || "")
     .split(/\n{2,}/)
     .map(p => p.trim())
@@ -52,7 +102,6 @@ function renderNounForms(v) {
 }
 
 function render(lesson) {
-  // Header meta
   $("#meta").textContent = `${lesson.date} · ${lesson.source} · ${lesson.difficulty}`;
 
   const tpl = $("#lesson-template").content.cloneNode(true);
@@ -62,21 +111,15 @@ function render(lesson) {
   $(".src-link", tpl).href = lesson.url;
   $(".difficulty", tpl).textContent = lesson.difficulty;
 
-  // Danish article
   renderParagraphs(lesson.danish_text_clean, $(".danish-text", tpl));
-
-  // English translation
   renderParagraphs(lesson.english_translation || lesson.english_summary, $(".english-translation", tpl));
 
-  // Vocabulary
   const vocabUl = $(".vocab-list", tpl);
   (lesson.vocabulary || []).forEach(v => {
     const li = document.createElement("li");
     li.className = "vocab-item";
-
     const isVerb = v.pos === "verb";
     const isNoun = v.pos === "noun";
-
     li.innerHTML = `
       <div class="vocab-head">
         <span class="word">${escape(v.word)}</span>
@@ -92,7 +135,6 @@ function render(lesson) {
     vocabUl.appendChild(li);
   });
 
-  // Grammar
   const gramUl = $(".grammar-list", tpl);
   (lesson.grammar_notes || []).forEach(g => {
     const li = document.createElement("li");
@@ -106,7 +148,6 @@ function render(lesson) {
     gramUl.appendChild(li);
   });
 
-  // Discussion
   const discUl = $(".discussion-list", tpl);
   (lesson.discussion_questions || []).forEach(q => {
     const li = document.createElement("li");
@@ -117,12 +158,13 @@ function render(lesson) {
   const app = $("#app");
   app.innerHTML = "";
   app.appendChild(tpl);
+  window.scrollTo({ top: 0 });
 }
 
 function renderError(err) {
   $("#app").innerHTML = `
     <div class="error">
-      <h2>No lesson today (yet)</h2>
+      <h2>No lesson available</h2>
       <p>${escape(err.message)}</p>
       <p>Run <code>python scripts/daily_lesson.py</code> to generate one.</p>
     </div>
@@ -135,4 +177,22 @@ function escape(s) {
   }[c]));
 }
 
-loadLesson().then(render).catch(renderError);
+// ---------- Bootstrap ----------
+
+async function loadAndRender() {
+  const requested = getDateFromHash();
+  try {
+    const [idx, lesson] = await Promise.all([loadIndex(), loadLesson(requested)]);
+    lessonIndex = idx;
+    render(lesson);
+    updateNav(lesson.date);
+  } catch (e) {
+    renderError(e);
+  }
+}
+
+$("#prev-day").addEventListener("click", e => navigateTo(e.currentTarget.dataset.date));
+$("#next-day").addEventListener("click", e => navigateTo(e.currentTarget.dataset.date));
+window.addEventListener("hashchange", loadAndRender);
+
+loadAndRender();

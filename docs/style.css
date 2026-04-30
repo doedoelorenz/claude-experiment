@@ -48,20 +48,53 @@ html, body {
 .topbar-row {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 14px 18px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
+  padding: 12px 18px 4px;
 }
 .brand {
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--accent);
+  font-size: 0.95rem;
 }
 .meta {
   font-size: 13px;
   color: var(--muted);
+  flex: 1;
+  text-align: center;
+}
+
+/* Day navigation row */
+.day-nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 4px 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-btn {
+  font: inherit;
+  font-size: 0.92rem;
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-height: 36px;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.nav-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 main {
